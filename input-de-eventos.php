@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Input de Eventos</title>
-        <link rel="stylesheet" href="inputdeeventos.css">
+        <link rel="stylesheet" href="input-de-eventos.css">
     </head>
     <body>
 
@@ -66,6 +66,6 @@
             </form>
         </div>
 
-        <script src="inputdeeventos.js"></script>
+        <script src="input-de-eventos.js"></script>
     </body>
 </html>
