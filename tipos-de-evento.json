@@ -1,0 +1,21 @@
+{
+    "receitas" : [
+        {
+             "tipo_1" : [
+                 { "nome" : "Doação de Pessoa Física" },
+                 { "campo_valor" : { "tipo" : "input_text", "label" : "Valor: " } },
+                 { "campo_data" : { "tipo" : "input_text", "label" : "Data: " } },
+                 { "campo_nome_completo" : { "tipo" : "input_text", "label" : "Nome Completo: " } },
+                 { "campo_cpf" : { "tipo" : "input_text", "label" : "CPF:" } }
+             ],
+
+             "tipo_2" : [
+                 { "nome" : "Doação de Pessoa Jurídica" },
+                 { "campo_valor" : { "tipo" : "input_text", "label" : "Valor: " } },
+                 { "campo_data" : { "tipo" : "input_text", "label" : "Data: " } },
+                 { "campo_razao_social" : { "tipo" : "input_text", "label" : "Razão Social: " } },
+                { "campo_cnpj" : { "tipo": "input_text", "label" : "CNPJ: " } }
+             ]
+        }    
+    ]
+}
