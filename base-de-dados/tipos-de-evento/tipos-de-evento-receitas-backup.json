@@ -1,0 +1,83 @@
+{
+    "doacao_de_pessoa_fisica" : {
+
+        "select_option" : {
+
+            "value" : "doacao-de-pessoa-fisica",
+            "option_inner_html" : "Doação de Pessoa Física"
+        },
+
+        "valor" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-fisica-valor",
+            "label_inner_html" : "Valor: "
+        },
+
+        "data" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-fisica-data",
+            "label_inner_html" : "Data: "
+        },
+
+        "nome_completo" : {
+
+            "element" :"input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-fisica-nome-completo",
+            "label_inner_html" : "Nome Completo: "
+        },
+
+        "cpf" : {
+
+            "element" : "input",
+            "type" : "input_text",
+            "name_id" : "doacao-de-pessoa-fisica-cpf",
+            "label_inner_html" : "CPF:"
+        }
+    },
+
+    "doacao__de_pessoa_juridica" : {
+
+        "select_option" : {
+
+            "value" : "doacao-de-pessoa-juridica",
+            "option_inner_html" : "Doação de Pessoa Jurídica"
+        },
+
+        "valor" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-juridica-valor",
+            "label_inner_html" : "Valor: "
+        },
+
+        "data" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-juridica-data",
+            "label_inner_html" : "Data: "
+        },
+
+        "razao-social" : {
+            
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-juridica-razao-social",
+            "label_inner_html" : "Razão Social: "
+        },
+
+        "cnpj" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "doacao-de-pessoa-juridica-cnpj",
+            "label_inner_html" : "CNPJ: "
+        }
+    }
+}

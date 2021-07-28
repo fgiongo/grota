@@ -1,0 +1,98 @@
+{
+    "doacao_de_pessoa_fisica": {
+        "select_option": {
+            "value": "doacao-de-pessoa-fisica",
+            "option_inner_html": "Doa\u00e7\u00e3o de Pessoa F\u00edsica"
+        },
+        "valor": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-fisica-valor",
+            "label_inner_html": "Valor: "
+        },
+        "data": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-fisica-data",
+            "label_inner_html": "Data: "
+        },
+        "nome_completo": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-fisica-nome-completo",
+            "label_inner_html": "Nome Completo: "
+        },
+        "cpf": {
+            "element": "input",
+            "type": "input_text",
+            "name_id": "doacao-de-pessoa-fisica-cpf",
+            "label_inner_html": "CPF:"
+        }
+    },
+    "doacao__de_pessoa_juridica": {
+        "select_option": {
+            "value": "doacao-de-pessoa-juridica",
+            "option_inner_html": "Doa\u00e7\u00e3o de Pessoa Jur\u00eddica"
+        },
+        "valor": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-juridica-valor",
+            "label_inner_html": "Valor: "
+        },
+        "data": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-juridica-data",
+            "label_inner_html": "Data: "
+        },
+        "razao-social": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-juridica-razao-social",
+            "label_inner_html": "Raz\u00e3o Social: "
+        },
+        "cnpj": {
+            "element": "input",
+            "type": "text",
+            "name_id": "doacao-de-pessoa-juridica-cnpj",
+            "label_inner_html": "CNPJ: "
+        }
+    },
+    "0": {
+        "select_option": {
+            "value": "novo-tipo-de-evento",
+            "option_inenr_html": "Novo Tipo de Evento"
+        },
+        "valor": {
+            "element": "input",
+            "type": "text",
+            "name_id": "novo-tipo-de-evento-valor",
+            "label_inner_html": "Valor: "
+        },
+        "data": {
+            "element": "input",
+            "type": "text",
+            "name_id": "novo-tipo-de-evento-data",
+            "label_inner_html": "Data: "
+        }
+    },
+    "1": {
+        "select_option": {
+            "value": "novo-tipo-de-evento",
+            "option_inenr_html": "Novo Tipo de Evento"
+        },
+        "valor": {
+            "element": "input",
+            "type": "text",
+            "name_id": "novo-tipo-de-evento-valor",
+            "label_inner_html": "Valor: "
+        },
+        "data": {
+            "element": "input",
+            "type": "text",
+            "name_id": "novo-tipo-de-evento-data",
+            "label_inner_html": "Data: "
+        }
+    }
+}
