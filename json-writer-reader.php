@@ -8,7 +8,7 @@ function get_tipos_de_evento_receitas($key1 = null, $key2 = null, $key3 = null) 
     $tipos_de_evento_receitas_str = file_get_contents("base-de-dados/tipos-de-evento/tipos-de-evento-receitas.json");
     $tipos_de_evento_receitas_arr = json_decode($tipos_de_evento_receitas_str, TRUE);
 
-    if ($key1 !== null || $key2 !== null || $key3 !== null) {
+    if ($key1 !== null && $key2 !== null && $key3 !== null) {
 
         return $tipos_de_evento_receitas_arr[$key1][$key2][$key3];
 
