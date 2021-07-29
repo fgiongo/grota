@@ -19,7 +19,7 @@ function get_tipos_de_evento_receitas($key1 = null, $key2 = null, $key3 = null) 
 }
 
 // função que retorna um objeto-teste (array) na estrutura de tipos-de-evento-receitas.json
-function gerar_objeto_teste() {
+function objeto_teste() {
     $novo_tipo_de_evento = array(
         "select_option" => array(
             "value" => "novo-tipo-de-evento",
@@ -42,15 +42,44 @@ function gerar_objeto_teste() {
 }
 
 
-// re-escreve tipos-de-evento-receitas.json com o objeto-teste anexado
-function write_to_json($arr) {
-    $tipos_de_evento = get_tipos_de_evento_receitas();
-    array_push($tipos_de_evento, $arr);
-    $tipos_de_evento_receitas_json = fopen("base-de-dados/tipos-de-evento/tipos-de-evento-receitas.json", "w");
-    $tipos_de_evento_str = json_encode($tipos_de_evento, JSON_PRETTY_PRINT);
-    fwrite($tipos_de_evento_receitas_json, $tipos_de_evento_str);
-    fclose($tipos_de_evento_receitas_json);
+
+// retorna array atualizado com novo valor (array $_POST)
+function update_content($new_arr, $json_path) {
+
+    if (file_exists($json_path)) {
+        $json_str = file_get_contents($json_path);
+        $json_arr = json_decode($json_str, true);
+        echo "file exists\n";
+
+        if (is_array($json_arr)){
+            array_push($json_arr, $new_arr);
+            echo "file is array";
+            return $json_arr;
+
+        } else {
+            echo "file is not array\n";
+            return array($new_arr);
+        }
+
+    } else {
+        echo "file doesn't exist\n";
+        return array($new_arr);
+    }
 }
 
-write_to_json(gerar_objeto_teste());
+// Escreve ou re-escreve um json usando array
+function write_arr_to_json($arr, $json_path) {
+    $arr_to_str = json_encode($arr, JSON_PRETTY_PRINT);
+    $file = fopen($json_path, "w");
 
+    fwrite($file, $arr_to_str);
+    fclose($file);
+}
+
+// re-escreve json da base de dados com
+function update_json($new_arr, $json_path) {
+    $updated_arr = update_content($new_arr, $json_path);
+    write_arr_to_json($updated_arr, $json_path);
+}
+
+update_json(objeto_teste(), "base-de-dados/tipos-de-evento/tipos-de-evento-receitas.json");
