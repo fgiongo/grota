@@ -28,32 +28,32 @@ var nomeCompletoDinamico = function(){
     var campoTipoDeEvento = document.getElementById("select-tipo-de-evento");
     var divCamposDinamicos = document.getElementById("div-campos-dinamicos");
 
-    if(campoTipoDeEvento.value === "salario-de-colaborador" && !divCamposDinamicos.contains(document.getElementById("div-nome-completo"))){
+    if(campoTipoDeEvento.value === "outro" && !divCamposDinamicos.contains(document.getElementById("div-nome-do-evento"))){
         
         var formDiv = document.createElement("div");
-        formDiv.setAttribute("id", "div-nome-completo");
+        formDiv.setAttribute("id", "div-nome-do-evento");
         formDiv.className = "div-elemento-de-formulario";
         
         var labelDiv = document.createElement("div");
         labelDiv.setAttribute("id", "div-label");
         
         var labelEl = document.createElement("label");
-        labelEl.setAttribute("id", "label-nome-completo");
-        labelEl.setAttribute("for", "nome-completo");
-        labelEl.innerHTML = "Nome Completo:";
+        labelEl.setAttribute("id", "label-nome-do-evento");
+        labelEl.setAttribute("for", "nomedo-evento");
+        labelEl.innerHTML = "Nome do Evento:";
         
         var formEl = document.createElement("input");
-        formEl.setAttribute("id", "nome-completo");
-        formEl.setAttribute("name", "nome-completo");
+        formEl.setAttribute("id", "nome-do-evento");
+        formEl.setAttribute("name", "nome-do-evento");
         formEl.setAttribute("type", "text");
         
         document.getElementById("div-campos-dinamicos").appendChild(formDiv);
-        document.getElementById("div-nome-completo").appendChild(labelDiv);
+        document.getElementById("div-nome-do-evento").appendChild(labelDiv);
         document.getElementById("div-label").appendChild(labelEl);
-        document.getElementById("div-nome-completo").appendChild(formEl);
+        document.getElementById("div-nome-do-evento").appendChild(formEl);
         
-    } else if (campoTipoDeEvento.value !== "salario-de-colaborador" && divCamposDinamicos.contains(document.getElementById("div-nome-completo"))) {
-        divCamposDinamicos.removeChild(document.getElementById("div-nome-completo"));
+    } else if (campoTipoDeEvento.value !== "outro" && divCamposDinamicos.contains(document.getElementById("div-nome-do-evento"))) {
+        divCamposDinamicos.removeChild(document.getElementById("div-nome-do-evento"));
     }
 }
 
