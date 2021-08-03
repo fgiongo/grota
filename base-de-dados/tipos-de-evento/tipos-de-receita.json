@@ -40,7 +40,7 @@
         }
     },
 
-    "doacao__de_pessoa_juridica" : {
+    "doacao_de_pessoa_juridica" : {
 
         "select_option" : {
 
@@ -78,6 +78,39 @@
             "type" : "text",
             "name_id" : "doacao-de-pessoa-juridica-cnpj",
             "label_inner_html" : "CNPJ: "
+        }
+    },
+
+    "outro" : {
+
+        "select_option" : {
+
+            "value" : "outro",
+            "option_inner_html" : "(outro)"
+        },
+
+        "nome" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "outro",
+            "label_inner_html" : "Nome do Evento: "
+        },
+
+        "valor" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "outro-valor",
+            "label_inner_html" : "Valor: "
+        },
+
+        "data" : {
+
+            "element" : "input",
+            "type" : "text",
+            "name_id" : "outro-data",
+            "label_inner_html" : "Data: "    
         }
     }
 }

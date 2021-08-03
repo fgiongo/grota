@@ -1,0 +1,19 @@
+[
+    {
+        "select-tipo-de-evento": "outro",
+        "input-text-valor-do-evento": "100,00",
+        "input-text-data-de-realizacao": "07\/08\/1988",
+        "input-submit-criar-evento": "Criar Evento"
+    },
+    {
+        "select-tipo-de-evento": "outro",
+        "input-text-valor-do-evento": "100,00",
+        "input-text-data-de-realizacao": "07\/08\/1988",
+        "input-submit-criar-evento": "Criar Evento"
+    },
+    {
+        "input-text-valor-do-evento": "",
+        "input-text-data-de-realizacao": "",
+        "input-submit-criar-evento": "Criar Evento"
+    }
+]

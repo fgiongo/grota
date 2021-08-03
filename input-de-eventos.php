@@ -35,11 +35,8 @@
                     <div id="div-label-tipo-de-evento"><label id= "label-tipo-de-evento" for="select-tipo-de-evento">Selecione o tipo de evento: </label></div>
                     <select name="select-tipo-de-evento" id="select-tipo-de-evento" size=10>
                         <optgroup label="Despesas">
-                            <option value="despesa-administrativa">Despesa Administrativa</option>
-                            <option value="salario-de-colaborador">Salário de Colaborador</option>
                         </optgroup>
-                        <optgroup label="Receitas">
-                            <option value="doacao-de-pessoa-fisica">Doação de Pessoa Física</option>
+                        <optgroup label="Receitas" id="optgroup_receitas">
                         </optgroup>
                     </select>
                     <input id="button-novo-tipo-de-evento" type="button" name="button-novo-tipo-de-evento" value="Inserir novo tipo de evento">
