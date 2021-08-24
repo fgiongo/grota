@@ -4,7 +4,7 @@ include "json-writer-reader.php";
 include "input-de-eventos.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html> <!-- comment -->
     <head>
     </head>
     <body>
