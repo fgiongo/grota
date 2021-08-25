@@ -1,8 +1,8 @@
 <div id="div-tabela-de-eventos">
     <table id="tabela-de-eventos">
-        <tr>
+        <tr id="tabela-headers">
             <th>ID</th>
-            <th>Evento</th>
+            <th>Título</th>
             <th>Data</th>
             <th>Valor</th>
         </tr>
@@ -10,7 +10,7 @@
 </div>
 <div>
     <h2>Inserir Evento</h2>
-    <form>
+    <form method="POST">
         <div><label for="titulo-novo-evento">Título</label><div>
         <input type="text" name="titulo-novo-evento" id="titulo-novo-evento">
 
@@ -19,5 +19,7 @@
 
         <div><label for="valor-novo-evento">Valor</label><div>
         <input type="text" name="valor-novo-evento" id="valor-novo-evento">
+
+        <div><input type="submit" name="adicionar-evento" id="adicionar-evento" value="Adicionar Evento"></div>
     </form>
 </div>
