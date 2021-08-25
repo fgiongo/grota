@@ -1,13 +1,9 @@
-<?php
-include "json-writer-reader.php";
-//include "entrada-de-receitas.php";
-include "input-de-eventos.php";
-?>
 <!DOCTYPE html>
-<html> <!-- comment -->
+<html>
     <head>
+        <title>Eventos Contábeis-financeiros</title>
     </head>
     <body>
-        <?php include "js-caixa-de-selecao.php"; ?>
+        <?php include "includes/html-eventos.php"; ?>
     </body>
 </html>
