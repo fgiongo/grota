@@ -1,10 +1,41 @@
 <script>
-const countEvents = function(){
-    var currentCount = document.getElementById("tabela-de-eventos").childNodes.length;
-    console.log(currentCount);
+//retorna numero de eventos
+function eventCounter(){
+    let currentCount = document.getElementById("tabela-de-eventos").childNodes.length;
+    return currentCount;
 }
 
-const adicionarEvento = function(){
+//string teste para POST com AJAX
+const ajaxPostStr = "this text was posted using AJAX!";
+const ajaxPostUrl = "scripts/ajax-handler.php";
+
+//novo request de POST
+function ajaxPost(str, url){
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = alertContents;
+    httpRequest.open("POST", url);
+    httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpRequest.send("str=" + encodeURIComponent(str));
+
+    //resposta do servidor (na forma de echo do php, ô loco)
+    function alertContents(){
+        if (httpRequest.readyState === XMLHttpRequest.DONE){
+            if(httpRequest.status === 200){
+                var response = JSON.parse(httpRequest.responseText);
+                alert(response.computedStr);
+                
+            } else {
+                alert("There was a problem with your request");
+            }
+        }
+    }
+
+}
+
+
+
+//cria os els de html para inserir evento na tabela
+function adicionarEvento(){
     const eventoTitulo = document.getElementById("titulo-novo-evento").value;
     const eventoData = document.getElementById("data-novo-evento").value;
     const eventoValor = document.getElementById("valor-novo-evento").value;
@@ -57,7 +88,9 @@ const adicionarEvento = function(){
 document.getElementById("adicionar-evento").addEventListener("click", function(e){
     e.preventDefault();
     adicionarEvento();
-    countEvents();
+    console.log(eventCounter());
+    ajaxPost(ajaxPostStr, ajaxPostUrl);
+
 }
 );
 </script>
